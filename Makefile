@@ -11,7 +11,7 @@ googletest/lib/libgtest.a:
 	${MAKE} -C googletest
 
 gtests: googletest/lib/libgtest.a libprimes.a gtests.cpp
-	${CXX} -I./googletest/googletest/include -L./googletest/lib -lgtest libprimes.a gtests.cpp -std=c++11 -o gtests
+	${CXX} -I./googletest/googletest/include -L./googletest/lib  gtests.cpp -std=c++11 -o gtests -lgtest -lpthread libprimes.a
 
 .PHONY: clean
 
