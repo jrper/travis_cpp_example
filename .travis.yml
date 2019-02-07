@@ -5,5 +5,5 @@ language:
 
 script:
   - make primes
-  - make gtest
-  - gtest
+  - make gtests
+  - gtests
