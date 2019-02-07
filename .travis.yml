@@ -1,0 +1,9 @@
+sudo: false
+
+language:
+  - cpp
+
+script:
+  - make primes
+  - make gtest
+  - gtest
